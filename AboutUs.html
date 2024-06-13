@@ -1,0 +1,124 @@
+<html>
+<head>
+  <title>About Us</title>
+  <link rel="stylesheet" href="AboutUs.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>EVENT CURATORS</h1>
+    <h2 id="subtitle">Events happen where imagination meets execution</h2>
+    <a href="Login_customer.jsp"><button type = "button" class = "logout-btn">
+      <div><class="btn-txt">Logout</div>
+    </button></a>
+      <br>
+      <br>
+      <div class="options-grid">
+        <a href="Homepage.html">HOME</a>
+        <a href="AboutUs.html" style = "text-decoration: underline;"><i>ABOUT</i></a>
+        <a href="Reviews.html">REVIEWS</a>
+        <a href="ContactUs.html">CONTACT</a>
+      </div>
+  </header>
+
+  <section class = "container">
+            <p style = "font-size: 32px;">About Us</p>
+            <p>Welcome to Event Curators, your premier destination for creating memorable and exceptional events. With a passion for creativity, attention to detail, and a commitment to excellence, we craft unforgettable experiences for our clients. Our journey in the world of event planning began with a simple vision: <b>to turn dreams into reality and make every moment a cherished memory.</b></p>
+            <br>
+            <br>
+            <p style = "font-size: 32px;">Our Philosophy</p>
+            <p>Our philosophy is simple yet profound: We believe that every event is a unique expression of your individuality, and it deserves the utmost care and attention to detail. We view each event as an opportunity to create a beautiful, memorable, and one-of-a-kind experience. From the initial consultation to the final moments of your event, we are committed to understanding your desires, needs, and dreams to design an event that reflects your personality and style.</p>
+            <br>
+            <br>
+            <p style = "font-size: 32px;">Our Services</p>
+            <p>At Event Curators, we offer a wide range of services to meet the diverse needs of our clients. Whether you're planning a wedding, corporate event, private celebration, or any special occasion, we have the expertise to handle it all. Our comprehensive services include:
+              <ul>
+                <li><b>Event Design and Conceptualization:</b> We work with you to create a unique event design that captures your vision, from color palettes to theme development and decor.</li>
+                <li><b>Venue Selection and Management: </b>We'll help you find the perfect venue that suits your style and needs, and manage all logistics and negotiations on your behalf.</li>
+                <li><b>Vendor Coordination: </b>Our extensive network of trusted vendors and suppliers ensures that you receive the best services within your budget.</li>
+                <li><b>Budget Planning and Management: </b>We'll work with you to create a realistic budget, and then meticulously manage it throughout the planning process.</li>
+                <li><b>Customized Event Planning: </b>We offer tailored packages and services to meet your specific requirements, ensuring your event is as unique as you are</li>
+              </ul>
+            </p>
+            <br>
+            <div class="slideshow-container">
+
+              <!-- Full-width images with number and caption text -->
+              <div class="mySlides fade">
+                <img src="slideshowimg1.jpg" style="width: 100%; ">
+                <!-- <div class="text">Outdoor corporate event</div> -->
+              </div>
+            
+              <div class="mySlides fade">
+                <img src="slideshowimg2.jpg" style="width: 100%; ">
+              </div>
+            
+              <div class="mySlides fade">
+                <img src="slideshowimg3.jpg" style="width: 100%; ">
+              </div>
+          
+              <div class="mySlides fade">
+                <img src="slideshowimg5.jpg" style="width: 100%; ">
+              </div>
+
+              <div class="mySlides fade">
+                <img src="slideshowimg4.jpg" style="width: 100%; ">
+              </div>
+
+              <!-- <div class="mySlides fade">
+                <img src="slideshowimg6.jpg" style="width: 100%; ">
+              </div> -->
+            
+              <!-- Next and previous buttons -->
+              <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+            </div>
+            <br>
+            <br>
+            <p style = "font-size: 32px;">Our Mission</p>
+            <p>Our mission is to bring joy and happiness to people's lives by creating unforgettable events that leave lasting memories. We thrive on making your visions a reality, and our relentless pursuit of excellence drives us to constantly improve and innovate. We are dedicated to providing you with exceptional service, innovative designs, and seamless event execution that will make your event truly special.</p>
+            <br>
+            <br>
+            <p style = "font-size: 32px;">Why Us</p>
+            <p>What sets Event Curators apart is our unwavering dedication to turning your dreams into a reality. We are passionate about what we do, and our meticulous attention to detail ensures that no stone is left unturned. We take pride in offering a personal touch to every event, understanding that it's the little things that make all the difference. Our commitment to delivering quality and exceeding your expectations has earned us a reputation for being a top event planning company in the industry.</p>
+            <br>
+            <br>
+            <p style = "font-size: 32px;">Our Team</p>
+            <p>At Event Curators, we are proud to boast a team of dedicated and experienced event planning professionals who work tirelessly to ensure that your event surpasses all expectations. Each member of our team brings a unique set of skills, from innovative design concepts to meticulous project management, and together, we seamlessly orchestrate your vision into a flawless event. We take pride in our diverse team, which brings a rich blend of creativity and expertise to every project.</p>
+            <br>
+            <br>
+  </section>
+
+  <footer>
+    <p>Copyright &copy; 2023 Event Curators</p>
+  </footer>
+
+  <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() 
+      {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      
+      for (i = 0; i < slides.length; i++) 
+      {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) 
+      {
+        slideIndex = 1
+      }    
+      
+      slides[slideIndex-1].style.display = "block";  
+      
+      setTimeout(showSlides, 3000); // Change image every 2 seconds
+      }
+  </script>
+</body>
+</html>

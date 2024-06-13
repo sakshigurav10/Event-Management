@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Reviews.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+        </style>
+    <title>Reviews</title>
+    <script>
+   
+    </script>   
+</head>
+<body>
+    <header>
+        <h1>EVENT CURATORS</h1>
+        <h2 id="subtitle">Events happen where imagination meets execution</h2>
+        <a href="Login_customer.jsp"><button type = "button" class = "logout-btn">
+            <div><class="btn-txt">Logout</div>
+          </button></a>
+          <br>
+          <br>
+          <div class="options-grid">
+            <a href="Homepage.html">HOME</a>
+            <a href="AboutUs.html" >ABOUT</a>
+            <a href="Reviews.html" style = "text-decoration: underline;"><i>REVIEWS</i></a>
+            <a href="ContactUs.html">CONTACT</a>
+          </div>
+      </header>
+      <div>
+        <h2 style="text-align: center;">OUR GUESTS LOVE US</h2>
+        <p style="text-align: center;font-style: italic;color: rgba(7, 6, 6, 0.767);">"Creating Moments, Capturing Reviews"</p>
+      </div>
+      <div class="reviews">
+        <div class="body">
+            <div class="image"><img src="profile2.jpg"></div>
+            <div class="name">Suraj Kumar</div>
+            <div class="place">Mumbai</div>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+            </div>
+            <div class="descript">Event Curators made my wedding anniversary day truly magical.Their expertise and dedication were evident throughout the entire process.</div>
+        </div>
+        <div class="body">
+            <div class="image"><img src="profile1.jpg"></div>
+            <div class="name">Priya Dev</div>
+            <div class="place">Pune</div>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="descript">Made my birthday party truely special.The decor, entertainment, food and overall experience were outstanding.</div>
+        </div>
+        <div class="body">
+            <div class="image"><img src="profile3.jpg"></div>
+            <div class="name">Mathew Jobs</div>
+            <div class="place">Delhi</div>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="descript">They are exceptional event planners.They turned my corporate conference into a seamlessly organized and impressive event.Highly recommended!</div>
+        </div>
+      </div>
+      <div class="button2" style = "text-align: center; text-decoration: underline;">
+        <a href="only_display.jsp">More Reviews</a>
+    </div>
+      <div class="form"><br>
+        <h2>Write a review about us</h2>
+        <form action = "Reviews.jsp" method="post">
+            <!-- <div class="inp"><input type="text" name = "name_r " placeholder="Enter your name"></div>
+            <div class="inp"><input type="text" name = "city_r " placeholder="Enter your city"></div> -->
+            <div class="inp input"><input type="text" name="name_r" placeholder="Enter your name"></div>
+            <div class="inp input"><input type="text" name="city_r" placeholder="Enter your city"></div>
+
+            <div class="inp input"><input type="text" name = "rating_r" placeholder="Please rate us on 5"></div>
+            <div class="inp message">
+                <textarea name= "message_r" placeholder="Write a review "></textarea>
+            </div>
+            <div class="button input" >
+                <input type="submit" value="Submit" >
+        </div>
+        </form>
+      </div>
+</body>
+</html>

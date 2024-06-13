@@ -1,0 +1,81 @@
+<html>
+<head>
+  <title>Payment Form</title>
+  <link rel="stylesheet" href="Payment.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+  </style>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <div class="container">
+        <h1>Cofirm your Payment</h1>
+        <div class="row1">
+            <div class="owner" id="owner">
+                <h3>Owner</h3><br>
+                <div class="input-field">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="cvv" id="cvv">
+                <h3>CVV</h3><br>
+                <div class="input-field">
+                    <input type="password">
+                </div>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="card_num" id="card_num">
+                <h3>Card Number</h3><br>
+                <div class="input-field">
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+        <div class="row3" id="valid">
+            <h3>Valid uptil</h3><br>
+            <div class="selection">
+                <div class="date">
+                   <select name="months" id="months">
+                    <option value="Jan">Jan</option>
+                    <option value="Feb">Feb</option>
+                    <option value="Mar">Mar</option>
+                    <option value="Apr">Apr</option>
+                    <option value="May">May</option>
+                    <option value="Jun">Jun</option>
+                    <option value="Jul">Jul</option>
+                    <option value="Aug">Aug</option>
+                    <option value="Sept">Sept</option>
+                    <option value="Oct">Oct</option>
+                    <option value="Nov">Nov</option>
+                    <option value="Dec">Dec</option>
+                    </select>
+                    <select name="years" id="years">
+                        <option >2029</option>
+                        <option >2028</option>
+                        <option >2027</option>
+                        <option >2026</option>
+                        <option >2025</option>
+                        <option >2024</option>
+                    </select>
+                </div>
+                <div class="cards">
+                    <img src="mc1.png">
+                    <img src="vs.png">
+                    <img src="pp1.png">
+                </div>
+            </div>
+        </div>
+        <div class="b">
+            <button class="button" id="btn" type="submit">CONFIRM PAYMENT</button>
+            <div class="popup" id="popup">
+                <img src="tick1.jpg">
+                <h2>Thank You!</h2>
+                <p>You have successfully completed your payment. Thankyou!</p>
+                <button type="button" onclick="window.location.href = 'Homepage.html';">OK</button>
+            </div>
+        </div>
+    </div>
+    <script src="Payment.js"></script>
+</body>
+</html>

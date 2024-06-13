@@ -1,0 +1,49 @@
+body {
+    text-align: center;
+    font-family: 'Alice', sans-serif;
+    padding: 20px;
+    background-image: url(bg3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+form {
+    margin: 0 auto;
+    padding: 10px;
+    align-content: center; 
+    margin-left: 320px;
+    background-color: #fff; /* White background for the form */
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+select, input, label {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Set the width to 100% to make them equal-sized */
+}
+
+/* Style for the submit button */
+input[type="submit"] {
+    background-color: rgb(94, 201, 133); /* A bright red color */
+    color: black; /* White text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    align-items: center;
+}
+option{
+    text-align: center;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(72, 204, 120); /* Darker red on hover */
+}
